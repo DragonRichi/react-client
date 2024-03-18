@@ -5,6 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Redux App</title>
+
+    <script type="text/javascript">
+      ;(function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&")
+            })
+            .join("?")
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          )
+        }
+      })(window.location)
+    </script>
     <script type="module" crossorigin src="/react-client/assets/index-iXl4y4XU.js"></script>
     <link rel="stylesheet" crossorigin href="/react-client/assets/index-zo7lauul.css">
   </head>
